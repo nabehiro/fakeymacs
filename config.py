@@ -826,6 +826,9 @@ def configure(keymap):
     def kill_buffer():
         self_insert_command("C-F4")()
 
+    def new_buffer():
+        self_insert_command("C-n")()
+
     def switch_to_buffer():
         self_insert_command("C-Tab")()
 
@@ -1328,6 +1331,7 @@ def configure(keymap):
     define_key(keymap_emacs, "Ctl-x C-s", reset_search(reset_undo(reset_counter(reset_mark(save_buffer)))))
     define_key(keymap_emacs, "Ctl-x C-w", reset_search(reset_undo(reset_counter(reset_mark(write_file)))))
     define_key(keymap_emacs, "Ctl-x d",   reset_search(reset_undo(reset_counter(reset_mark(dired)))))
+    define_key(keymap_emacs, "Ctl-x C-n",   reset_search(reset_undo(reset_counter(reset_mark(new_buffer)))))
 
     ## 「カーソル移動」のキー設定
     define_key(keymap_emacs, "C-b",        reset_search(reset_undo(reset_counter(mark(repeat(backward_char), False)))))
