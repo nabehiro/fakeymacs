@@ -1408,13 +1408,13 @@ def configure(keymap):
     else:
         define_key(keymap_emacs, "C-S-Minus", reset_search(reset_undo(reset_counter(reset_mark(undo)))))
 
-    if is_japanese_keyboard:
-        # C-Atmark だとうまく動かない方が居るようなので C-(192) としている
-        # （http://bhby39.blogspot.jp/2015/02/windows-emacs.html）
-        define_key(keymap_emacs, "C-(192)", reset_search(reset_undo(reset_counter(set_mark_command))))
-    else:
-        # C-S-2 は有効とならないが、一応設定は行っておく（C-S-3 などは有効となる。なぜだろう？）
-        define_key(keymap_emacs, "C-S-2", reset_search(reset_undo(reset_counter(set_mark_command))))
+    # if is_japanese_keyboard:
+    #     # C-Atmark だとうまく動かない方が居るようなので C-(192) としている
+    #     # （http://bhby39.blogspot.jp/2015/02/windows-emacs.html）
+    #     define_key(keymap_emacs, "C-(192)", reset_search(reset_undo(reset_counter(set_mark_command))))
+    # else:
+    #     # C-S-2 は有効とならないが、一応設定は行っておく（C-S-3 などは有効となる。なぜだろう？）
+    #     define_key(keymap_emacs, "C-S-2", reset_search(reset_undo(reset_counter(set_mark_command))))
 
     define_key(keymap_emacs, "C-Space",   reset_search(reset_undo(reset_counter(set_mark_command))))
     define_key(keymap_emacs, "Ctl-x h",   reset_search(reset_undo(reset_counter(mark_whole_buffer))))
