@@ -391,7 +391,7 @@ def configure(keymap):
     use_ctrl_digit_key_for_digit_argument = False
 
     # F1 から F12 を Alt+数字キー列として使うかを指定する（True: 使う、False: 使わない）
-    use_alt_digit_key_for_f1_to_f12 = True
+    # use_alt_digit_key_for_f1_to_f12 = True
 
     # F13 から F24 を Alt-Shift+数字キー列として使うかを指定する（True: 使う、False: 使わない）
     use_alt_shift_digit_key_for_f13_to_f24 = False
