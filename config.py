@@ -191,67 +191,69 @@ def configure(keymap):
 
     # Emacs のキーバインドに“したくない”アプリケーションソフトを指定する
     # （Keyhac のメニューから「内部ログ」を ON にすると processname や classname を確認することができます）
-    not_emacs_target     = ["bash.exe",               # WSL
-                            "ubuntu.exe",             # WSL
-                            "ubuntu1604.exe",         # WSL
-                            "ubuntu1804.exe",         # WSL
-                            "ubuntu2004.exe",         # WSL
-                            "debian.exe",             # WSL
-                            "kali.exe",               # WSL
-                            "SLES-12.exe",            # WSL
-                            "openSUSE-42.exe",        # WSL
-                            "openSUSE-Leap-15-1.exe", # WSL
-                            "mstsc.exe",              # Remote Desktop
-                            "WindowsTerminal.exe",    # Windows Terminal
-                            "mintty.exe",             # mintty
-                            "Cmder.exe",              # Cmder
-                            "ConEmu.exe",             # ConEmu
-                            "ConEmu64.exe",           # ConEmu
-                            "emacs.exe",              # Emacs
-                            "emacs-X11.exe",          # Emacs
-                            "emacs-w32.exe",          # Emacs
-                            "gvim.exe",               # GVim
-                            "Code.exe",               # VSCode
-                            "xyzzy.exe",              # xyzzy
-                            "VirtualBox.exe",         # VirtualBox
-                            "XWin.exe",               # Cygwin/X
-                            "XWin_MobaX.exe",         # MobaXterm/X
-                            "Xming.exe",              # Xming
-                            "vcxsrv.exe",             # VcXsrv
-                            "X410.exe",               # X410
-                            "putty.exe",              # PuTTY
-                            "ttermpro.exe",           # TeraTerm
-                            "MobaXterm.exe",          # MobaXterm
-                            "TurboVNC.exe",           # TurboVNC
-                            "vncviewer.exe",          # UltraVNC
-                            "vncviewer64.exe",        # UltraVNC
-                            "Xpra-Launcher.exe",      # Xpra
-                           ]
+    not_emacs_target     = []
+                        #     ["bash.exe",               # WSL
+                        #     "ubuntu.exe",             # WSL
+                        #     "ubuntu1604.exe",         # WSL
+                        #     "ubuntu1804.exe",         # WSL
+                        #     "ubuntu2004.exe",         # WSL
+                        #     "debian.exe",             # WSL
+                        #     "kali.exe",               # WSL
+                        #     "SLES-12.exe",            # WSL
+                        #     "openSUSE-42.exe",        # WSL
+                        #     "openSUSE-Leap-15-1.exe", # WSL
+                        #     "mstsc.exe",              # Remote Desktop
+                        #     "WindowsTerminal.exe",    # Windows Terminal
+                        #     "mintty.exe",             # mintty
+                        #     "Cmder.exe",              # Cmder
+                        #     "ConEmu.exe",             # ConEmu
+                        #     "ConEmu64.exe",           # ConEmu
+                        #     "emacs.exe",              # Emacs
+                        #     "emacs-X11.exe",          # Emacs
+                        #     "emacs-w32.exe",          # Emacs
+                        #     "gvim.exe",               # GVim
+                        #     "Code.exe",               # VSCode
+                        #     "xyzzy.exe",              # xyzzy
+                        #     "VirtualBox.exe",         # VirtualBox
+                        #     "XWin.exe",               # Cygwin/X
+                        #     "XWin_MobaX.exe",         # MobaXterm/X
+                        #     "Xming.exe",              # Xming
+                        #     "vcxsrv.exe",             # VcXsrv
+                        #     "X410.exe",               # X410
+                        #     "putty.exe",              # PuTTY
+                        #     "ttermpro.exe",           # TeraTerm
+                        #     "MobaXterm.exe",          # MobaXterm
+                        #     "TurboVNC.exe",           # TurboVNC
+                        #     "vncviewer.exe",          # UltraVNC
+                        #     "vncviewer64.exe",        # UltraVNC
+                        #     "Xpra-Launcher.exe",      # Xpra
+                        #    ]
 
     # IME の切り替え“のみをしたい”アプリケーションソフトを指定する
     # （指定できるアプリケーションソフトは、not_emacs_target で（除外）指定したものからのみとなります）
-    ime_target           = ["bash.exe",               # WSL
-                            "ubuntu.exe",             # WSL
-                            "ubuntu1604.exe",         # WSL
-                            "ubuntu1804.exe",         # WSL
-                            "ubuntu2004.exe",         # WSL
-                            "debian.exe",             # WSL
-                            "kali.exe",               # WSL
-                            "SLES-12.exe",            # WSL
-                            "openSUSE-42.exe",        # WSL
-                            "openSUSE-Leap-15-1.exe", # WSL
-                            "WindowsTerminal.exe",    # Windows Terminal
-                            "mintty.exe",             # mintty
-                            "Cmder.exe",              # Cmder
-                            "ConEmu.exe",             # ConEmu
-                            "ConEmu64.exe",           # ConEmu
-                            "gvim.exe",               # GVim
-                            "Code.exe",               # VSCode
-                            "xyzzy.exe",              # xyzzy
-                            "putty.exe",              # PuTTY
-                            "ttermpro.exe",           # TeraTerm
-                            "MobaXterm.exe",          # MobaXterm
-                           ]
+    ime_target           = []
+                        #     ["bash.exe",               # WSL
+                        #     "ubuntu.exe",             # WSL
+                        #     "ubuntu1604.exe",         # WSL
+                        #     "ubuntu1804.exe",         # WSL
+                        #     "ubuntu2004.exe",         # WSL
+                        #     "debian.exe",             # WSL
+                        #     "kali.exe",               # WSL
+                        #     "SLES-12.exe",            # WSL
+                        #     "openSUSE-42.exe",        # WSL
+                        #     "openSUSE-Leap-15-1.exe", # WSL
+                        #     "WindowsTerminal.exe",    # Windows Terminal
+                        #     "mintty.exe",             # mintty
+                        #     "Cmder.exe",              # Cmder
+                        #     "ConEmu.exe",             # ConEmu
+                        #     "ConEmu64.exe",           # ConEmu
+                        #     "gvim.exe",               # GVim
+                        #     "Code.exe",               # VSCode
+                        #     "xyzzy.exe",              # xyzzy
+                        #     "putty.exe",              # PuTTY
+                        #     "ttermpro.exe",           # TeraTerm
+                        #     "MobaXterm.exe",          # MobaXterm
+                        #    ]
 
     # clipboard 監視の対象外とするアプリケーションソフトを指定する
     not_clipboard_target = ["EXCEL.EXE"]              # Excel
@@ -280,7 +282,7 @@ def configure(keymap):
     scroll_key = ["M-v", "C-v"]
 
     # Emacs日本語入力モードを使うかどうかを指定する（True: 使う、False: 使わない）
-    use_emacs_ime_mode = True
+    use_emacs_ime_mode = False
 
     # Emacs日本語入力モードが有効なときに表示するバルーンメッセージを指定する
     # emacs_ime_mode_balloon_message = None
